@@ -9,4 +9,10 @@
             <script type="text/javascript" src="/course_module/static/src/js/tour.js"/>
         </xpath>
     </template>
+
+    <template id="qunit_suite_tests" name="Course Module JS Tests" inherit_id="web.qunit_suite">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/course_module/static/tests/test.js"/>
+        </xpath>
+    </template>
 </odoo>

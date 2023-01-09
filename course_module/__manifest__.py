@@ -7,6 +7,7 @@
     'author': "TAKOBI",
     'depends': [
         'base',
+        'website',
     ],
     'data': [
         'security/ir.model.access.csv',
