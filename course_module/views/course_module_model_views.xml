@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright 2023 Simone Rubino - TAKOBI
+  ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+  -->
+<odoo>
+    <record id="course_module_model_action" model="ir.actions.act_window">
+        <field name="name">Course records</field>
+        <field name="res_model">course_module.model</field>
+    </record>
+
+    <menuitem
+            id="course_module_model_menu"
+            action="course_module_model_action"
+    />
+</odoo>

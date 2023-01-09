@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright 2023 Simone Rubino - TAKOBI
+  ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+  -->
+<odoo>
+    <record id="course_module_wizard_view_form" model="ir.ui.view">
+        <field name="name">Form view for Wizard for Course Module</field>
+        <field name="model">course_module.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="action"/>
+                            <field name="value" attrs="{
+                                'required': [
+                                    ('action', '!=', 'mul10'),
+                                ],
+                                'invisible': [
+                                    ('action', '=', 'mul10'),
+                                ],
+                            }"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Go" class="oe_highlight" type="object" name="do_action"/>
+                        <button string="Cancel" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="course_module_wizard_action" model="ir.actions.act_window">
+        <field name="name">Course wizard</field>
+        <field name="res_model">course_module.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_type">action</field>
+        <field name="binding_model_id" ref="model_course_module_model"/>
+    </record>
+</odoo>
