@@ -5,8 +5,8 @@ import json
 
 from addons.website.tools import MockRequest
 from odoo import tests
-from odoo.addons.course_module.tests.common import create_records
-from odoo.addons.course_module.controllers.main import MainController
+from .common import create_records
+from ..controllers.main import MainController
 
 
 @tests.tagged('controllers', 'post_install', '-at_install')

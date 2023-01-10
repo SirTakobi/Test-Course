@@ -5,6 +5,8 @@
     'name': "Course Module",
     'version': '12.0.1.0.0',
     'author': "TAKOBI",
+    'website': 'https://github.com/SirTakobi/Test-Course',
+    'license': 'AGPL-3',
     'depends': [
         'base',
         'website',

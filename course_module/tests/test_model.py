@@ -2,7 +2,7 @@
 #  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import tests
-from odoo.addons.course_module.tests.common import create_records
+from .common import create_records
 from odoo.exceptions import UserError
 from odoo.fields import first
 from odoo.tests import Form
